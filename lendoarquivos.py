@@ -1,3 +1,4 @@
+'''
 #lendo o arquivo inteiro
 file = open("../b64.txt","r");
 print(file.read());
@@ -13,6 +14,7 @@ print(file.readline());
 #lendo todas as linhas (linha a linha)
 file = open("../b64.txt","r");
 print(file.readlines());
+'''
 
 #fazendo uso do statement with
 with open("arquivo.txt","r") as file:

@@ -1,0 +1,18 @@
+mkdir -p Documentos/Projetos/paramiko
+ln -s /home/cbernaldo/Documentos/Projetos/paramiko/ docs
+yum install git
+#Python3 Install
+wget https://www.python.org/ftp/python/3.3.7/Python-3.3.7.tgz
+./configure && make && make test && make install
+ln -s /usr/local/bin/python3.3 /usr/bin/python3
+cd /usr/local/src
+wget https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+ln -s /usr/local/bin/pip3.3 /usr/bin/pip3
+pip3 install -U pip
+exit
+cd docs/
+sudo pip3 install virtualenv
+virtualenv paramiko
+sudo pip install paramiko
+sudo pip install netmiko
