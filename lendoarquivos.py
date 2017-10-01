@@ -16,6 +16,7 @@ file = open("../b64.txt","r");
 print(file.readlines());
 '''
 
+
 #fazendo uso do statement with
 with open("arquivo.txt","r") as file:
 	arquivo = file.readlines();

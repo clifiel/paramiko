@@ -20,3 +20,6 @@ https://stackoverflow.com/questions/13261802/converting-a-string-to-and-from-bas
 
 X Server
 http://www.geo.mtu.edu/geoschem/docs/putty_install.html
+
+Sublime
+https://packagecontrol.io/packages/Jedi%20-%20Python%20autocompletion
