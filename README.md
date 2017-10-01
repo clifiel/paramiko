@@ -17,3 +17,6 @@ Base64
 https://code.tutsplus.com/tutorials/base64-encoding-and-decoding-using-python--cms-25588
 https://pymotw.com/2/base64/
 https://stackoverflow.com/questions/13261802/converting-a-string-to-and-from-base-64
+
+X Server
+http://www.geo.mtu.edu/geoschem/docs/putty_install.html
