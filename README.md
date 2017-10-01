@@ -23,3 +23,4 @@ http://www.geo.mtu.edu/geoschem/docs/putty_install.html
 
 Sublime
 https://packagecontrol.io/packages/Jedi%20-%20Python%20autocompletion
+http://sublimetextdicas.com.br/sublime-text-como-ide-para-python/
