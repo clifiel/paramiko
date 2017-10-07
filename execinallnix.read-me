@@ -1,0 +1,36 @@
+#'''ExecInAll*nix
+#Executa diversos comandos obtidos de um arquivo de texto (fixo) em varios servidores linux cujo os hostnames ou IPs
+#tambem sao obtidos por um arquivo de texto (fixo).
+#'''
+#Criado para estudo da biblioteca paramiko do python
+#'''
+#Lista de funcoes
+#
+'''
+ConnClient 	#Conecta no servidor remoto via ssh e retona o objeto de cliente caso consiga se conectar. Se nao conseguir 
+			conectar retorna null;
+CloseClient	#Fecha a conexao do cliente;			
+
+ExecCommand	#Executa uma lista comandos obtidos de um arquivo de texto. Retorna True caso consiga executar tudo 
+			corretamente;
+
+StdoutPrint	#Imprime a saida do comando executado no host remoto;
+StdinInput	#Digita algo no stdin do host remoto (Ex: senhas);
+StderrCheck #verifica se houve algum erro na execucao do comando no host remoto;
+
+GetUser		#Pega o usuario de um arquivo de texto ou de um input na tela;
+GetPass		#Pega o password de um arquivo de texto ou de um input na tela;
+'''
+#Lista de funcoes do arquivo de configuracao
+'''
+Auth		#Definir como será o metodo de autenticacao, se por arquivo de texto, chave RSA ou usuario e senha digitado;
+			#Definir se a autenticacao sera variavel (cada servidor tem usuario e senha diferente) ou estatica (mesmo 
+			usuario e senha para todos os servidores);
+Log			#Definir o arquivo de log;
+			#Definir o nivel de verbosidade;
+
+Thread		#Definir quantos processos serao executado ao mesmo tempo;
+
+Exec		#Definir o que sera entregue a funcao ExecCommand, se um objeto (open a file) com todos os comandos ou apenas 			  a linha a ser executada no host remoto;
+			#Definir o comportamento ao encontrar um erro na execucao do comando;
+'''
