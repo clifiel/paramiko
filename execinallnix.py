@@ -1,10 +1,20 @@
 import paramiko;
+from paramiko.ssh_exception import AuthenticationException;
 
 def ConnClient(hostname, username, password):
 	#verificar se o paramiko ja foi importado
 	ClientSSH = paramiko.client.SSHClient()
 	ClientSSH.set_missing_host_key_policy(paramiko.client.AutoAddPolicy())
-	ClientSSH.connect(hostname=hostname, username=username ,password=password)
+
+	try:
+		ClientSSH.connect(hostname=hostname, username=username ,password=password)
+	except paramiko.ssh_exception.AuthenticationException as e:
+		print(e)
+		return False
+	except paramiko.ssh_exception.NoValidConnectionsError as e:
+		print(e)
+		return False
+	
 	return ClientSSH
 
 def CloseClient(ClientSSH):
@@ -31,4 +41,19 @@ def ExecCommand(PathToCommands, ClientSSH):
 
 	#Valida o status da execucao dos comandos e da o retorno de acordo com a validacao
 	return True
+
+hostname="192.168.1.9"
+username="cbernaldo"
+password="123456"
+
+PathToCommands="commandlist.txt"
+
+if (ConnClient(hostname, username, password)):
+	print("Conectado com sucesso.")
+	print("Iniciando a execucao de comandos")
+	ClientSSH = ConnClient(hostname, username, password)
+	ExecCommand(PathToCommands, ClientSSH)
+	CloseClient(ClientSSH)
+else:
+	print("Deu algum problema.")
 

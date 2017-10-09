@@ -4,6 +4,10 @@ Referencias da Pesquisa - Paramiko:
 https://www.programcreek.com/python/example/4561/paramiko.SSHClient
 http://jessenoller.com/blog/2009/02/05/ssh-programming-with-paramiko-completely-different
 
+Tratando o stderr
+https://stackoverflow.com/questions/33708336/paramiko-recv-read-readlines-on-stderr-returns-empty-string
+https://stackoverflow.com/questions/3562403/how-can-you-get-the-ssh-return-code-using-paramiko
+
 Trabalhando com Arquivos
 http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
 https://www.computerhope.com/issues/ch001721.htm

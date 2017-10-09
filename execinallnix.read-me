@@ -31,6 +31,9 @@ Log			#Definir o arquivo de log;
 
 Thread		#Definir quantos processos serao executado ao mesmo tempo;
 
-Exec		#Definir o que sera entregue a funcao ExecCommand, se um objeto (open a file) com todos os comandos ou apenas 			  a linha a ser executada no host remoto;
+Exec		#Definir o que sera entregue a funcao ExecCommand, se um objeto (open a file) com todos os comandos ou apenas 			    a linha a ser executada no host remoto;
 			#Definir o comportamento ao encontrar um erro na execucao do comando;
+
+ConnSSH		#Definir porta diferente da padrao;
+			#Tratar erros de conexao ssh;
 '''
